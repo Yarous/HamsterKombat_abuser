@@ -1,5 +1,5 @@
 <h1>README.md для скрипта Hamster Kombat</h1>
-
+<h1> project was writed using library "request" for sending http request for HamsterKombatAPI, soooo... Now - requests is outdated library, cause it's sync library. I think - we should use AIOHTTP in the next versions. Now im looking for transfer the project from the console to the web, that's all. Thank you for reading it! | S0ra - main developer </h1>
 <p>Привет!</p>
 
 <p>Этот скрипт для игры Hamster Kombat поможет вам очень быстро собрать все ваши коины. Пожелайте своим пальчикам удачи! Все, что вам нужно сделать:</p>
