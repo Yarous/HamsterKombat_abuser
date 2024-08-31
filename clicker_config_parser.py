@@ -1,4 +1,4 @@
-import requests
+from aiohttp_session import session
 from requests_payload_sample import RequestsPayloadSample
 
 
@@ -6,9 +6,9 @@ class ClickerConfigParser(RequestsPayloadSample):
     def __init__(self):
         super().__init__()
 
-    def get_clicker_config(self) -> dict:
-        response = requests.post("https://api.hamsterkombatgame.io/clicker/config",
+    async def get_clicker_config(self) -> dict:
+        async with session.post("https://api.hamsterkombatgame.io/clicker/config",
                                  headers=self._request_headers
-                                 ).json()
+                                 ).json() as clicker_config:
 
-        return response
+            return clicker_config
